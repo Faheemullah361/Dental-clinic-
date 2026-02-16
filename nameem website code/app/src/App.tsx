@@ -353,35 +353,35 @@ function ServicesSection() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-8">
           {services.map((service, index) => (
             <div
               key={service.title}
-              className={`group bg-white rounded-2xl p-8 shadow-dental hover:shadow-dental-lg transition-all duration-500 hover:-translate-y-2 cursor-pointer ${
+              className={`group bg-white rounded-xl md:rounded-2xl p-3 md:p-6 lg:p-8 shadow-dental hover:shadow-dental-lg transition-all duration-500 hover:-translate-y-2 cursor-pointer ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               {/* Icon */}
-              <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                {service.icon}
+              <div className={`w-10 md:w-14 lg:w-16 h-10 md:h-14 lg:h-16 rounded-lg md:rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center text-white mb-3 md:mb-4 lg:mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <div className="scale-75 md:scale-100">{service.icon}</div>
               </div>
 
               {/* Content */}
-              <h3 className="font-display text-xl font-semibold text-dental-dark mb-3">
+              <h3 className="font-display text-xs md:text-lg lg:text-xl font-semibold text-dental-dark mb-2 md:mb-3">
                 {service.title}
               </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-xs md:text-sm text-gray-600 mb-2 md:mb-4 lg:mb-6 leading-tight md:leading-relaxed">
                 {service.description}
               </p>
 
               {/* Link */}
               <a 
                 href="#contact" 
-                className="inline-flex items-center text-dental-blue font-medium group/link"
+                className="hidden sm:inline-flex items-center text-dental-blue font-medium text-xs md:text-sm group/link"
               >
                 Learn More
-                <ArrowRight className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-2 w-3 h-3 md:w-4 md:h-4 group-hover/link:translate-x-1 transition-transform" />
               </a>
             </div>
           ))}
@@ -692,30 +692,30 @@ function WhyChooseUsSection() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-8">
           {features.map((feature, index) => (
             <div
               key={feature.number}
-              className={`group relative bg-white rounded-2xl p-8 shadow-dental hover:shadow-dental-lg transition-all duration-500 hover:-translate-y-2 ${
+              className={`group relative bg-white rounded-lg md:rounded-2xl p-3 md:p-6 lg:p-8 shadow-dental hover:shadow-dental-lg transition-all duration-500 hover:-translate-y-2 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               {/* Number Badge */}
-              <div className="absolute -top-4 -right-4 w-12 h-12 bg-dental-blue rounded-full flex items-center justify-center text-white font-bold shadow-dental animate-pulse-glow">
+              <div className="absolute -top-2 -right-2 md:-top-4 md:-right-4 w-8 md:w-10 lg:w-12 h-8 md:h-10 lg:h-12 bg-dental-blue rounded-full flex items-center justify-center text-white font-bold text-xs md:text-sm lg:text-lg shadow-dental animate-pulse-glow">
                 {feature.number}
               </div>
 
               {/* Icon */}
-              <div className="w-16 h-16 bg-dental-blue/10 rounded-2xl flex items-center justify-center text-dental-blue mb-6 group-hover:bg-dental-blue group-hover:text-white transition-all duration-300">
-                {feature.icon}
+              <div className="w-8 md:w-12 lg:w-16 h-8 md:h-12 lg:h-16 bg-dental-blue/10 rounded-lg md:rounded-2xl flex items-center justify-center text-dental-blue mb-2 md:mb-4 lg:mb-6 group-hover:bg-dental-blue group-hover:text-white transition-all duration-300">
+                <div className="scale-75 md:scale-100">{feature.icon}</div>
               </div>
 
               {/* Content */}
-              <h3 className="font-display text-xl font-semibold text-dental-dark mb-3">
+              <h3 className="font-display text-xs md:text-lg lg:text-xl font-semibold text-dental-dark mb-1 md:mb-3">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-xs md:text-sm text-gray-600 leading-tight md:leading-relaxed">
                 {feature.description}
               </p>
             </div>
