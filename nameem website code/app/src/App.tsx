@@ -175,7 +175,7 @@ function HeroSection() {
           {/* Content */}
           <div className={`space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="space-y-4">
-              <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-dental-dark leading-tight">
+              <h1 className="font-display text-3xl md:text-5xl lg:text-7xl font-bold text-dental-dark leading-tight">
                 Your Smile{' '}
                 <span className="text-dental-blue relative">
                   Our Passion
@@ -184,7 +184,7 @@ function HeroSection() {
                   </svg>
                 </span>
               </h1>
-              <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed">
+              <p className="text-sm md:text-lg text-gray-600 max-w-xl leading-relaxed">
                 Experience world-class dental care with cutting-edge technology and compassionate expertise. 
                 Your journey to a perfect smile starts here.
               </p>
@@ -193,7 +193,7 @@ function HeroSection() {
             <div className="flex flex-wrap gap-4">
               <Button 
                 size="lg"
-                className="bg-dental-blue hover:bg-dental-dark text-white px-8 py-6 rounded-full text-lg transition-all duration-300 hover:scale-105 hover:shadow-dental-xl group"
+                className="bg-dental-blue hover:bg-dental-dark text-white px-4 py-3 md:px-8 md:py-6 rounded-full text-sm md:text-lg transition-all duration-300 hover:scale-105 hover:shadow-dental-xl group"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Book Your Visit
@@ -202,7 +202,7 @@ function HeroSection() {
               <Button 
                 size="lg"
                 variant="outline"
-                className="border-2 border-dental-blue text-dental-blue hover:bg-dental-blue hover:text-white px-8 py-6 rounded-full text-lg transition-all duration-300"
+                className="border-2 border-dental-blue text-dental-blue hover:bg-dental-blue hover:text-white px-4 py-3 md:px-8 md:py-6 rounded-full text-sm md:text-lg transition-all duration-300"
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Explore Services
@@ -217,8 +217,8 @@ function HeroSection() {
                   className="text-center"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="text-3xl md:text-4xl font-bold text-dental-blue">{stat.value}</div>
-                  <div className="text-sm text-gray-500">{stat.label}</div>
+                  <div className="text-2xl md:text-3xl font-bold text-dental-blue">{stat.value}</div>
+                  <div className="text-xs md:text-sm text-gray-500">{stat.label}</div>
                 </div>
               ))}
             </div>
