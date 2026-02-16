@@ -371,14 +371,14 @@ function ServicesSection() {
               <h3 className="font-display text-xs md:text-lg lg:text-xl font-semibold text-dental-dark mb-2 md:mb-3">
                 {service.title}
               </h3>
-              <p className="text-xs md:text-sm text-gray-600 mb-2 md:mb-4 lg:mb-6 leading-tight md:leading-relaxed">
+              <p className="hidden md:block text-xs md:text-sm text-gray-600 mb-2 md:mb-4 lg:mb-6 leading-tight md:leading-relaxed">
                 {service.description}
               </p>
 
               {/* Link */}
               <a 
                 href="#contact" 
-                className="hidden sm:inline-flex items-center text-dental-blue font-medium text-xs md:text-sm group/link"
+                className="hidden md:inline-flex items-center text-dental-blue font-medium text-xs md:text-sm group/link"
               >
                 Learn More
                 <ArrowRight className="ml-2 w-3 h-3 md:w-4 md:h-4 group-hover/link:translate-x-1 transition-transform" />
@@ -581,26 +581,24 @@ function CoursesSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           {courses.map((course, index) => (
             <div
               key={course.title}
-              className={`rounded-2xl border border-dental-blue/10 bg-white shadow-dental p-6 transition-all duration-500 hover:shadow-dental-lg ${
+              className={`rounded-xl md:rounded-2xl border border-dental-blue/10 bg-white shadow-dental p-4 md:p-6 transition-all duration-500 hover:shadow-dental-lg ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <h3 className="font-display text-lg font-semibold text-dental-dark mb-2">
-                    {course.title}
-                  </h3>
-                  <div className="text-gray-600">
-                    {course.organizer}
-                  </div>
+              <div className="flex flex-col gap-2">
+                <h3 className="font-display text-sm md:text-lg font-semibold text-dental-dark">
+                  {course.title}
+                </h3>
+                <div className="hidden md:block text-sm text-gray-600">
+                  {course.organizer}
                 </div>
-                <div className="flex items-center gap-2 text-sm text-dental-blue font-medium whitespace-nowrap">
-                  <Calendar className="w-4 h-4" />
+                <div className="flex items-center gap-2 text-xs md:text-sm text-dental-blue font-medium">
+                  <Calendar className="w-3 h-3 md:w-4 md:h-4" />
                   {course.date}
                 </div>
               </div>
@@ -715,7 +713,7 @@ function WhyChooseUsSection() {
               <h3 className="font-display text-xs md:text-lg lg:text-xl font-semibold text-dental-dark mb-1 md:mb-3">
                 {feature.title}
               </h3>
-              <p className="text-xs md:text-sm text-gray-600 leading-tight md:leading-relaxed">
+              <p className="hidden md:block text-xs md:text-sm text-gray-600 leading-tight md:leading-relaxed">
                 {feature.description}
               </p>
             </div>
