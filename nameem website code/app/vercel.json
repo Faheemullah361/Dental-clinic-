@@ -4,6 +4,12 @@
   "env": {
     "npm_config_legacy_peer_deps": "true"
   },
+  "rewrites": [
+    {
+      "source": "/sitemap.xml",
+      "destination": "/api/sitemap"
+    }
+  ],
   "headers": [
     {
       "source": "/(sitemap\\.xml|robots\\.txt)",
