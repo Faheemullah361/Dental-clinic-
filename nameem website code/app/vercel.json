@@ -3,5 +3,16 @@
   "outputDirectory": "dist",
   "env": {
     "npm_config_legacy_peer_deps": "true"
-  }
+  },
+  "headers": [
+    {
+      "source": "/(sitemap\\.xml|robots\\.txt)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        }
+      ]
+    }
+  ]
 }
