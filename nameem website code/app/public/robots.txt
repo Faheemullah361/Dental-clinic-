@@ -4,4 +4,4 @@ Disallow: /node_modules/
 Disallow: /.git/
 Disallow: /.vercel/
 
-Sitemap: https://dental-clinic-nine-iota.vercel.app/sitemap.xml
+Sitemap: https://dental-clinic-q3pp.vercel.app/sitemap.xml
