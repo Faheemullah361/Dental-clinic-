@@ -1,22 +1,5 @@
 {
   "installCommand": "npm run install:app",
   "buildCommand": "npm run build",
-  "outputDirectory": "app/dist",
-  "rewrites": [
-    {
-      "source": "/sitemap.xml",
-      "destination": "/api/sitemap"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(sitemap\\.xml|robots\\.txt)",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/xml; charset=utf-8"
-        }
-      ]
-    }
-  ]
+  "outputDirectory": "app/dist"
 }
