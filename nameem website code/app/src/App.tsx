@@ -75,7 +75,7 @@ function Header() {
               <Stethoscope className="w-6 h-6 text-white" />
             </div>
             <span className="font-display font-semibold text-xl text-dental-dark">
-              Dr Naeem Dental <span className="text-dental-blue">or Aesthetic Clinic</span>
+              Dr Naeem Dental <span className="text-dental-blue">and Aesthetic Clinic</span>
             </span>
           </a>
 
@@ -927,7 +927,7 @@ function ContactSection() {
     {
       icon: <MapPin className="w-6 h-6" />,
       label: 'Visit Us',
-      value: 'Dr Naeem Dental or Aesthetic Clinic',
+      value: 'Dr Naeem Dental and Aesthetic Clinic',
       subtext: 'Near Civil Hospital, Digri',
     },
   ];
@@ -1085,7 +1085,7 @@ function Footer() {
                 <Stethoscope className="w-6 h-6 text-white" />
               </div>
               <span className="font-display font-semibold text-xl">
-                Dr Naeem Dental <span className="text-dental-blue">or Aesthetic Clinic</span>
+                Dr Naeem Dental <span className="text-dental-blue">and Aesthetic Clinic</span>
               </span>
             </a>
             <p className="text-gray-400 leading-relaxed">
@@ -1192,7 +1192,7 @@ function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © 2024 Dr Naeem Dental or Aesthetic Clinic. All rights reserved.
+              © 2024 Dr Naeem Dental and Aesthetic Clinic. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-dental-blue transition-colors" onClick={(e) => { e.preventDefault(); toast.success('Privacy policy coming soon!'); }}>
